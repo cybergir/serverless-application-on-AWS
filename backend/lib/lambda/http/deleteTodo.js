@@ -1,19 +1,14 @@
 import 'source-map-support/register';
-import { deleteToDo } from "../../businessLogic/ToDo";
-export const handler = async (event) => {
-    // TODO: Remove a TODO item by id
-    console.log("Processing Event ", event);
-    const authorization = event.headers.Authorization;
-    const split = authorization.split(' ');
-    const jwtToken = split[1];
+import * as middy from 'middy';
+import { cors, httpErrorHandler } from 'middy/middlewares';
+export const handler = middy(async (event) => {
     const todoId = event.pathParameters.todoId;
-    const deleteData = await deleteToDo(todoId, jwtToken);
-    return {
-        statusCode: 200,
-        headers: {
-            "Access-Control-Allow-Origin": "*",
-        },
-        body: deleteData,
-    };
-};
+    // TODO: Remove a TODO item by id
+    return undefined;
+});
+handler
+    .use(httpErrorHandler())
+    .use(cors({
+    credentials: true
+}));
 //# sourceMappingURL=deleteTodo.js.map

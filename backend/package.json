@@ -15,19 +15,17 @@
     "winston": "^3.2.1"
   },
   "devDependencies": {
-    "@types/aws-lambda": "^8.10.108",
-    "@types/jsonwebtoken": "^8.5.9",
-    "@types/node": "^10.17.60",
+    "@types/aws-lambda": "^8.10.17",
+    "@types/jsonwebtoken": "^8.3.2",
+    "@types/node": "^10.14.4",
     "aws-sdk": "^2.1253.0",
-    "serverless-aws-documentation": "^1.1.0",
-    "serverless-iam-roles-per-function": "^3.2.0-e97ab49",
-    "serverless-plugin-canary-deployments": "^0.4.8",
+    "serverless-iam-roles-per-function": "^3.2.0",
+    "serverless-plugin-canary-deployments": "^0.4.7",
     "serverless-plugin-tracing": "^2.0.0",
-    "serverless-reqvalidator-plugin": "^1.0.4",
     "serverless-webpack": "^5.10.0",
-    "ts-loader": "^5.4.5",
-    "typescript": ">=3.8.0",
-    "webpack": "^4.46.0"
+    "ts-loader": "^5.3.3",
+    "typescript": "^4.8.4",
+    "webpack": "^4.29.6"
   },
   "author": "Ivan Mushketyk",
   "license": "MIT"
